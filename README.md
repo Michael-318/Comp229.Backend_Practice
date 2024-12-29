@@ -1,2 +1,2 @@
-# Comp229.Backend_Practice
- Comp229_Class Practices
+# COMP229_Backend_GrProject
+ Backend GroupProject
