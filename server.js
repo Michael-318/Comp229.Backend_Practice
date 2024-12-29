@@ -6,14 +6,14 @@
 
 var db = require('./config/mongoose');
 var app = require('./config/express');
-var debug = require('debug')('comp229backend:server');
+var debug = require('debug')('myapp:server');
 var http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
 /**
@@ -90,5 +90,5 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 
-  console.log('==== The app is running on http://localhost:' + port );
+  console.log('====> The app is running on http://localhost:' + port);
 }

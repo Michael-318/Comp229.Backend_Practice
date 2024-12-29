@@ -1,3 +1,7 @@
+require('dotenv').config();
+
 module.exports = {
-    "ATLASDB":"mongodb+srv://dbadmin:7PBHrd7HMyHdGU5B@clusterexpress.5dt0c.mongodb.net/products?retryWrites=true&w=majority"
+    "ATLASDB":process.env.ATLASDB,
+    "SECRETKEY": process.env.SECRETKEY,
+    JWT_SECRET: process.env.JWT_SECRET
 }
